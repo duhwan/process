@@ -2,9 +2,9 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "user04-customer"
-    _DIR_NAME: "customer"
-    _NAMESPACE: "hotels"
+    _PROJECT_NAME: "user11-process"
+    _DIR_NAME: "process"
+    _NAMESPACE: "processTask"
 
 phases:
   install:
@@ -85,7 +85,7 @@ phases:
                     - name: apiurl
                       valueFrom:
                         configMapKeyRef:
-                          name: hotel-configmap
+                          name: process-configmap
                           key: apiurl 
                     resources:
                       requests:
